@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03748292773979D00D46B55 /* WebViewBib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03748282773979D00D46B55 /* WebViewBib.swift */; };
 		B074C272277384CB005DE7CD /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B074C271277384CB005DE7CD /* LaunchScreenVC.swift */; };
+		B074C27427738F73005DE7CD /* formController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B074C27327738F73005DE7CD /* formController.swift */; };
 		F5634EFF275DF46600430ADD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5634EFE275DF46600430ADD /* Data.swift */; };
 		F5A471A02754CE16009CBF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4719F2754CE16009CBF39 /* AppDelegate.swift */; };
 		F5A471A22754CE16009CBF39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A471A12754CE16009CBF39 /* SceneDelegate.swift */; };
@@ -21,7 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B03748282773979D00D46B55 /* WebViewBib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewBib.swift; sourceTree = "<group>"; };
 		B074C271277384CB005DE7CD /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
+		B074C27327738F73005DE7CD /* formController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formController.swift; sourceTree = "<group>"; };
 		F5634EFE275DF46600430ADD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F5A4719C2754CE16009CBF39 /* KlassenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlassenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A4719F2754CE16009CBF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				B074C271277384CB005DE7CD /* LaunchScreenVC.swift */,
 				F5A471A32754CE16009CBF39 /* ViewController.swift */,
 				F5A471BC2754DE47009CBF39 /* BeschreibungTableViewController.swift */,
+				B074C27327738F73005DE7CD /* formController.swift */,
+				B03748282773979D00D46B55 /* WebViewBib.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,7 +187,9 @@
 				F5A471B42754D16F009CBF39 /* CustomGameTableViewCell.swift in Sources */,
 				B074C272277384CB005DE7CD /* LaunchScreenVC.swift in Sources */,
 				F5A471A42754CE16009CBF39 /* ViewController.swift in Sources */,
+				B03748292773979D00D46B55 /* WebViewBib.swift in Sources */,
 				F5A471A02754CE16009CBF39 /* AppDelegate.swift in Sources */,
+				B074C27427738F73005DE7CD /* formController.swift in Sources */,
 				F5A471BD2754DE47009CBF39 /* BeschreibungTableViewController.swift in Sources */,
 				F5A471A22754CE16009CBF39 /* SceneDelegate.swift in Sources */,
 			);

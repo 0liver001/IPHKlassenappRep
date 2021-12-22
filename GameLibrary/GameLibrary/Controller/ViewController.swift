@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         myTableView.rowHeight = 100
         myTableView.keyboardDismissMode = .onDrag
     }
+    @IBAction func home(_ sender: Any) {
+    }
     
     @IBAction func AddButton(_ sender: UIBarButtonItem) {
         

@@ -31,4 +31,5 @@ class BeschreibungTableViewController: UITableViewController {
         publishedLabel.text = game?.published
         priceLabel.text = game?.price
     }
+ 
 }

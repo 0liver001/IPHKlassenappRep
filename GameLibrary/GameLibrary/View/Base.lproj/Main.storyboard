@@ -16,8 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="u7o-FY-zTr">
+                                <rect key="frame" x="186" y="433" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="home:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUu-03-Pzv"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-mH-K23">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Suche Kurs" id="bIT-R4-aw3">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -64,7 +72,20 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Bib Kurse" id="NFq-0R-ggg">
-                        <barButtonItem key="leftBarButtonItem" image="plus.square" catalog="system" id="JDp-Xr-I68"/>
+                        <leftBarButtonItems>
+                            <barButtonItem image="plus.square" catalog="system" id="JDp-Xr-I68"/>
+                            <barButtonItem style="plain" id="Fnt-ud-rJY">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="e1b-Dn-YS7">
+                                    <rect key="frame" x="63" y="7" width="41" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Home"/>
+                                    <connections>
+                                        <action selector="home:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aew-kI-jOS"/>
+                                        <segue destination="Ml0-tW-p0B" kind="presentation" identifier="homeSeg" modalPresentationStyle="fullScreen" id="z99-Wy-Rmn"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -167,7 +188,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Abschlussjahr" id="y1Y-1t-gpl">
+                            <tableViewSection headerTitle="Abschlussjahr" footerTitle="" id="y1Y-1t-gpl">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="MHx-V8-dV3">
                                         <rect key="frame" x="0.0" y="366.50000104037201" width="414" height="65"/>
@@ -258,6 +279,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOm-GP-Ema">
+                                <rect key="frame" x="162" y="739" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="bib Webseite"/>
+                                <connections>
+                                    <action selector="webseite:" destination="Ml0-tW-p0B" eventType="touchUpInside" id="y7F-6U-3pp"/>
+                                    <segue destination="fmr-Vd-Aa4" kind="presentation" identifier="webViewerbibSeg" modalPresentationStyle="fullScreen" id="jZ5-6I-kv1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="637-3Z-CbI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -271,9 +301,51 @@
             </objects>
             <point key="canvasLocation" x="-1210" y="117"/>
         </scene>
+        <!--Web View Bib-->
+        <scene sceneID="cwb-cB-l46">
+            <objects>
+                <viewController id="fmr-Vd-Aa4" customClass="WebViewBib" customModule="KlassenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sWu-zR-mEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="skS-S6-WPV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="805"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-gI-xbI">
+                                <rect key="frame" x="369" y="14" width="23" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="house.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="homebutton:" destination="fmr-Vd-Aa4" eventType="touchUpInside" id="wfQ-gf-NB4"/>
+                                    <segue destination="Ml0-tW-p0B" kind="presentation" identifier="web2home" modalPresentationStyle="fullScreen" id="ijl-Ss-hGM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HOI-yu-jor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="skS-S6-WPV" id="w7G-xr-jqm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFM-Cv-fc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-884.05797101449286" y="-557.14285714285711"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="z99-Wy-Rmn"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bib_logo_4c_vers1-447mal298" width="447" height="298"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

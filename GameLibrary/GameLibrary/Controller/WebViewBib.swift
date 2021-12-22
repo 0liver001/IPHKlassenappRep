@@ -1,31 +1,26 @@
 //
-//  LaunchScreenVC.swift
+//  WebViewBib.swift
 //  KlassenApp
 //
 //  Created by Hakan Yildiz / BBS2H20A on 22.12.21.
 //
 
 import UIKit
-
-class LaunchScreenVC: UIViewController {
-
+import WebKit
+class WebViewBib: UIViewController {
+    @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let url = URL(string: "https://www.bib.de")
+        
+        webView.load(URLRequest(url:url!))
         // Do any additional setup after loading the view.
     }
     
 
-    @IBOutlet weak var Logo: UIImageView!
-    @IBOutlet weak var greetLabel: UILabel!
-    
-    
-    @IBAction func webseite(_ sender: Any) {
+    @IBAction func homebutton(_ sender: Any) {
     }
-    @IBAction func startButton(_ sender: Any) {
-        
-    }
-    @IBOutlet var saDASD: UIView!
+    
     /*
     // MARK: - Navigation
 
