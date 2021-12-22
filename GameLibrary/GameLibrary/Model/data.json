@@ -1,12 +1,48 @@
 [{
 "gameName" :  "BBS2H20A",
-"genre" : "Software Development",
+"genre" : "Software Development (Option Bachelor)",
 "published" : "2 Jahre",
 "price" : "2022"
 },
 {
+"gameName" :  "BBMS2H20A",
+"genre" : "Software & Game Development (Kombi bbm und bbs)",
+"published" : "2 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBS3H17A",
+"genre" : "Software Development",
+"published" : "3 Jahre",
+"price" : "2020"
+},
+{
+"gameName" :  "BBG3H20A",
+"genre" : "Design & Art",
+"published" : "3 Jahre",
+"price" : "2023"
+},
+{
+"gameName" :  "BBS3H20A",
+"genre" : "Software Development",
+"published" : "3 Jahre",
+"price" : "2023"
+},
+{
+"gameName" :  "BBS3H19A",
+"genre" : "Software Development",
+"published" : "3 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBS3H21A",
+"genre" : "Software Development",
+"published" : "3 Jahre",
+"price" : "2024"
+},
+{
 "gameName" :  "BBM2H20A",
-"genre" : "Game Development",
+"genre" : "Game Development (Option Bachelor)",
 "published" : "2 Jahre",
 "price" : "2022"
 },
@@ -14,6 +50,102 @@
 "gameName" :  "BBG3H19A",
 "genre" : "Design & Art",
 "published" : "3 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBG3H16A",
+"genre" : "Design & Art",
+"published" : "3 Jahre",
+"price" : "2019"
+},
+{
+"gameName" :  "BBG3H21A",
+"genre" : "Design & Art",
+"published" : "3 Jahre",
+"price" : "2024"
+},
+{
+"gameName" :  "BBT4H22A",
+"genre" : "Tanz und Unterhaltung (Option zum Bachelor)",
+"published" : "4 Jahre",
+"price" : "2026"
+},
+{
+"gameName" :  "BBG2H20A",
+"genre" : "Design & Art (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBS2H18A",
+"genre" : "Software Development (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2020"
+},
+{
+"gameName" :  "BBM2H19A",
+"genre" : "Game Development (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2021"
+},
+{
+"gameName" :  "BBM3H19A",
+"genre" : "Game Development",
+"published" : "3 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBM3H20A",
+"genre" : "Game Development",
+"published" : "3 Jahre",
+"price" : "2023"
+},
+{
+"gameName" :  "BBM3H18A",
+"genre" : "Game Development",
+"published" : "2 Jahre",
+"price" : "2021"
+},
+{
+"gameName" :  "BBS2H19A",
+"genre" : "Software Development (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2021"
+},
+{
+"gameName" :  "BBS2H21A",
+"genre" : "Software Development (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2023"
+},
+{
+"gameName" :  "BBG2H18A",
+"genre" : "Design & Art (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2020"
+},
+{
+"gameName" :  "BBE2H23A",
+"genre" : "Esport Egoshooter & Moba",
+"published" : "2 Jahre",
+"price" : "2025"
+},
+{
+"gameName" :  "BBG2H19A",
+"genre" : "Design & Art (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2023"
+},
+{
+"gameName" :  "BBG2H21A",
+"genre" : "Design & Art (Option Bachelor)",
+"published" : "2 Jahre",
+"price" : "2024"
+},
+{
+"gameName" :  "BBG*10H12A",
+"genre" : "Werde geil Kurs (Master inkl.)",
+"published" : "10 Jahre",
 "price" : "2022"
 }
 ]
