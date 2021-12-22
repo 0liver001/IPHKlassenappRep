@@ -18,6 +18,7 @@ class BeschreibungTableViewController: UITableViewController {
     //Zugriff auf das Game-Objekt
     var game: GameModel?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
