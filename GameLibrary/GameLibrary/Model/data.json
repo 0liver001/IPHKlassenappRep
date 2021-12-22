@@ -1,0 +1,19 @@
+[{
+"gameName" :  "BBS2H20A",
+"genre" : "Software Development",
+"published" : "2 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBM2H20A",
+"genre" : "Game Development",
+"published" : "2 Jahre",
+"price" : "2022"
+},
+{
+"gameName" :  "BBG3H19A",
+"genre" : "Design & Art",
+"published" : "3 Jahre",
+"price" : "2022"
+}
+]
